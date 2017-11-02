@@ -1,0 +1,7 @@
+<h1>new comment</h1>
+
+<%= form_tag create_comment_path(@post), method: :post do %>
+  <label for="content">content</label>
+  <%= text_field_tag 'content' %>
+  <%= submit_tag 'Create coment' %>
+<% end %>
